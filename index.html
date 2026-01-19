@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Indian Talent Olympiad – Result</title>
+  <title>Indian Talent Olympiad – Result</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -9,10 +9,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Indian Talent Olympiad – Round 1 Result 2025–26" />
   <meta property="og:description" content="Check your Olympiad exam result using roll number." />
-  <meta property="og:image" content="https://d21jfbz7ftz185.cloudfront.net/assets/user_assets/images/logos/indian-talent-olympiad-new-logo298x52.webp" />
-  <meta property="og:url" content="https://deeplink-backend.vercel.app/" />
+  <meta property="og:image" content="https://deeplink-backend.vercel.app/ito-preview.png" />
+  <meta property="og:url" content="https://deeplink-backend.vercel.app" />
 
-  <!-- Image size -->
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
@@ -20,18 +19,12 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Indian Talent Olympiad – Result" />
   <meta name="twitter:description" content="Check your Round 1 Olympiad Result 2025–26." />
-  <meta name="twitter:image" content="https://d21jfbz7ftz185.cloudfront.net/assets/user_assets/images/logos/indian-talent-olympiad-new-logo298x52.webp" />
+  <meta name="twitter:image" content="https://deeplink-backend.vercel.app/ito-preview.png" />
+
   <script>
     (function () {
       const ua = navigator.userAgent.toLowerCase();
-      const params = window.location.search || '';
 
-      // OPTIONAL: store params for later use
-      try {
-        localStorage.setItem('deep_link_params', params);
-      } catch (e) {}
-
-      // ANDROID → Play Store
       if (ua.includes('android')) {
         window.location.replace(
           'https://play.google.com/store/apps/details?id=com.ito.onlineexam.app'
@@ -39,7 +32,6 @@
         return;
       }
 
-      // iOS → App Store
       if (ua.includes('iphone') || ua.includes('ipad')) {
         window.location.replace(
           'https://apps.apple.com/in/app/ito-indian-talent-olympiad/id6443736601'
@@ -47,7 +39,6 @@
         return;
       }
 
-      // Desktop fallback
       document.body.innerHTML =
         '<h3>Please open this link on a mobile device</h3>';
     })();

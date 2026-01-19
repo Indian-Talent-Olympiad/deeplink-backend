@@ -42,6 +42,10 @@ app.get('/olympiad-result', (req, res) => {
           'https://apps.apple.com/in/app/ito-indian-talent-olympiad/id6443736601'
         );
       }
+        else {
+  document.body.innerHTML =
+    '<h2>Open this link on a mobile device</h2>';
+}
     })();
   </script>
 </head>

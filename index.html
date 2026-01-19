@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ITO Deep Link Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    window.onload = function () {
+      const ua = navigator.userAgent.toLowerCase();
+      const params = window.location.search;
+
+      document.body.innerHTML =
+        "<h3>User Agent</h3><pre>" + ua + "</pre>";
+
+      // Android
+      if (ua.includes("android")) {
+        setTimeout(() => {
+          window.location.href =
+            "https://play.google.com/store/apps/details?id=com.indiantalent.app";
+        }, 2000);
+      }
+
+      // iOS
+      else if (ua.includes("iphone") || ua.includes("ipad")) {
+        setTimeout(() => {
+          window.location.href =
+            "https://apps.apple.com/app/idXXXXXXXXX";
+        }, 2000);
+      }
+
+      // Desktop
+      else {
+        document.body.innerHTML +=
+          "<p>Open this link on a mobile device</p>";
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <h2>ITO Deep Link Test Page</h2>
+  <p>Checking device...</p>
+</body>
+</html>

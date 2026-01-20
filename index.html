@@ -1,46 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Indian Talent Olympiad – Result</title>
+  <title>Indian Talent Olympiad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Indian Talent Olympiad – Round 1 Result 2025–26" />
-  <meta property="og:description" content="Check your Olympiad exam result using roll number." />
-  <meta property="og:image" content="https://deeplink-backend.vercel.app/ito-preview.png" />
-  <meta property="og:url" content="https://deeplink-backend.vercel.app" />
-
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Indian Talent Olympiad – Result" />
-  <meta name="twitter:description" content="Check your Round 1 Olympiad Result 2025–26." />
-  <meta name="twitter:image" content="https://deeplink-backend.vercel.app/ito-preview.png" />
+  <!-- HARD FALLBACK -->
+  <meta http-equiv="refresh" content="2;url=https://play.google.com/store/apps/details?id=com.ito.onlineexam.app">
 
   <script>
     (function () {
       const ua = navigator.userAgent.toLowerCase();
 
+      function go(url) {
+        setTimeout(() => {
+          window.location.href = url;
+        }, 500);
+      }
+
       if (ua.includes('android')) {
-        window.location.replace(
-          'https://play.google.com/store/apps/details?id=com.ito.onlineexam.app'
-        );
+        go('https://play.google.com/store/apps/details?id=com.ito.onlineexam.app');
         return;
       }
 
       if (ua.includes('iphone') || ua.includes('ipad')) {
-        window.location.replace(
-          'https://apps.apple.com/in/app/ito-indian-talent-olympiad/id6443736601'
-        );
+        go('https://apps.apple.com/in/app/ito-indian-talent-olympiad/id6443736601');
         return;
       }
 
       document.body.innerHTML =
-        '<h3>Please open this link on a mobile device</h3>';
+        '<h3>Open this link on a mobile device</h3>';
     })();
   </script>
 </head>
